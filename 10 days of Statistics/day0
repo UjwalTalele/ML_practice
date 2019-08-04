@@ -1,0 +1,9 @@
+size = int(input())
+nums = list(map(int, input().split()))
+weights = list(map(int, input().split()))
+sum = wsum = 0
+for i in range(size):
+    sum = sum + (int(nums[i])*int(weights[i]))
+    wsum = wsum + int(weights[i])
+avg = sum/wsum
+print(round(avg,1))
